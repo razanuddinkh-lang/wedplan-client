@@ -1,0 +1,2 @@
+import Link from "next/link";
+export default function BlockedPage(){return <div className="grid min-h-[60vh] place-items-center px-5 text-center"><div><h1 className="font-serif text-4xl font-bold">Account access paused</h1><p className="mt-3 max-w-md text-sm leading-7 text-stone-500">This account has been blocked by platform administration. Contact the WedPlan support team if you believe this is a mistake.</p><Link href="/" className="mt-6 inline-flex rounded-full bg-rose-700 px-6 py-3 text-sm font-semibold text-white">Return home</Link></div></div>;}

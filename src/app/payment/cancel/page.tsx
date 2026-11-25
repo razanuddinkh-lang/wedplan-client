@@ -1,0 +1,3 @@
+import Link from "next/link";
+import { requireSession } from "@/lib/access";
+export default async function PaymentCancelPage(){await requireSession();return <div className="grid min-h-[55vh] place-items-center px-5 text-center"><div className="max-w-xl"><h1 className="font-serif text-4xl font-bold">Checkout was cancelled.</h1><p className="mt-4 text-sm leading-7 text-stone-500">No Premium subscription was activated. You can return to your vendor dashboard and try again whenever you are ready.</p><Link href="/dashboard/subscription" className="mt-7 inline-flex rounded-full bg-rose-700 px-6 py-3 text-sm font-semibold text-white">Return to plans</Link></div></div>;}

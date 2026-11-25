@@ -1,0 +1,5 @@
+import type { Metadata } from "next";
+import { Suspense } from "react";
+import { AuthForm } from "@/components/auth-form";
+export const metadata: Metadata = { title: "Create an account" };
+export default function SignUpPage() { return <div className="mx-auto grid min-h-[75vh] max-w-6xl items-center gap-12 px-5 py-14 md:grid-cols-2 lg:px-8"><div className="mx-auto w-full max-w-md"><p className="section-kicker">Join the WedPlan community</p><h1 className="mt-3 font-serif text-4xl font-bold">Make room for a little magic.</h1><p className="mb-8 mt-3 text-sm text-stone-500">Create an account to discover services, manage bookings, or grow your wedding business.</p><Suspense fallback={<div className="h-96 animate-pulse rounded-2xl bg-rose-50"/>}><AuthForm mode="sign-up"/></Suspense></div><div className="hidden overflow-hidden rounded-[2rem] bg-rose-50 p-8 md:block"><img src="https://images.unsplash.com/photo-1519225421980-888cb8d7234e?auto=format&fit=crop&w=1000&q=85" alt="Elegant wedding table" className="h-full min-h-[570px] w-full rounded-2xl object-cover"/></div></div>; }

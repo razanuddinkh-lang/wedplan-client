@@ -1,0 +1,2 @@
+import Link from "next/link";
+export default function NotFound() { return <div className="grid min-h-[55vh] place-items-center px-5 text-center"><div><p className="section-kicker">404 · Not found</p><h1 className="mt-3 font-serif text-5xl font-bold">This page wandered off.</h1><p className="mt-4 text-sm text-stone-500">The page may have moved or the link may be incorrect.</p><Link href="/" className="mt-7 inline-flex rounded-full bg-rose-700 px-6 py-3 text-sm font-semibold text-white">Back to home</Link></div></div>; }
